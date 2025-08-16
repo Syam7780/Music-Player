@@ -9,28 +9,28 @@ body{
 background:black;
  }
 .main{
-height:600px;
-width:500px;
+height:90%;
+width:95%;
 background:purple;
 position:fixed;
-margin:30px;
-margin-left:25px;
+margin:2%;
 border:7px outset gold;
 }
 .container {
-height:500px;
-width:400px;
+height:80%;
+width:90%;
+margin: 2%;
 background:navy;
-margin:30px 50px ;
 border-radius:50px;
 position:fixed;
 }
 #audio{
-margin-top:20px;
-margin-left:50px;
+margin-top:10px;
+margin-left:37%;
 }
 #mp3{
-margin:10px 10px 0px 10px;
+margin:10px 10px 0px 0px;
+margin-left: 30%;
 background:slategrey;
 color:white;
 }
@@ -41,12 +41,12 @@ color:cyan;
 #d{
 height:100px;
 width:100px;
-background-image:repeating-conic-gradient(magenta 30deg,
-cyan 60deg,cornsilk 90deg,red 120deg,green 150deg);
-animation:rotate 2s linear infinite normal;
+background-image:repeating-radial-gradient(slategrey 30%,
+olive 60%,black 70%,red 80%,black 90%);
+animation:rotate 0.4s linear infinite normal;
 float:left;
 border-radius:50px;
-animation:rotate 2s linear infinite normal;
+
  }
 
 .disc1{
@@ -58,6 +58,7 @@ margin-left:140px;
 margin-top:20px;
 
 }
+
 #cd{
 margin-left:50px;
 height:150px;
@@ -86,21 +87,27 @@ margin-left:160px;
 }
 .bar{
 height:10px;
-width:300px;
+width: 310px;
 margin-top:120px;
-margin-left:50px;
+margin-left:420px;
 border:3px double white;
 background: repeating-linear-gradient(red 20%, magenta 50%
 ,green 80%,yellow 120%);
 border-radius:5px;
 }
-@keyframes rotate{
-from{
-transform:rotate(0deg);}
-to{
-transform:rotate(360deg);}
 
+@keyframes rotate{
+10%{background-image:repeating-radial-gradient(black 30%,
+red 70%,lime 80%);
 }
+51%{background-image:repeating-radial-gradient(lime 30%,
+black 50%,red 80%);
+}
+99%{background-image:repeating-radial-gradient(red 20%,
+lime 60%,black 100%);
+ }
+}
+
 @keyframes boom{
 0%{background-image:repeating-radial-gradient(slategrey 30%,
 olive 60%,black 70%,red 80%);
@@ -114,7 +121,42 @@ olive 30%,black 40%,red 70%);
 99%{background-image:repeating-radial-gradient(slategrey 20%,
 olive 30%,black 40%,red 60%,cyan 80%);
 }
-
+}
+@keyframes boom1{
+0%{background-image:repeating-radial-gradient(black 30%,
+green 60%,gold 70%,red 80%,lime 90%);;
+}
+33%{background-image:repeating-radial-gradient(green 40%,
+gold 50%,white 80%,black 110%);
+}
+66%{background-image:repeating-radial-gradient(gold 20%,
+darkmagenta 30%,black 40%,green 70%);
+ }
+99%{background-image:repeating-radial-gradient(lime 20%,
+white 30%,gold 40%,orangered 60%,black 80%);
+}
+}
+.c1{
+   height: 75%;
+   width: 30%;
+   margin-left: 59%;
+   margin-top: -19.5%;
+   padding-left: 0%;
+}
+.middle{
+   margin-left: 50px;
+   position: absolute;
+   top:-7%;
+   left: 28%;
+   height:250px;
+   width:250px;
+background-image:repeating-radial-gradient(black 30%,
+green 60%,gold 70%,red 80%,lime 90%);
+margin-top:100px;
+margin-left:125px;
+border-radius: 50%;
+animation:boom1 0.4s linear infinite normal;
+}
 </style>
 
 </head>
@@ -128,10 +170,20 @@ olive 30%,black 40%,red 60%,cyan 80%);
 <div class="disc1" id="d"> </div>
 <div class="disc2" id="d"> </div>
 <div class="disc3" id="cd">
- 
  </div>
 <div class="disc4" id="d"> </div>
 <div class="disc5" id="d"> </div>
+
+<div class="disc3 middle" id=""> </div>
+
+ <div class="container c1">
+<div class="disc1" id="d"> </div>
+<div class="disc2" id="d"> </div>
+<div class="disc3" id="cd">
+ </div>
+<div class="disc4" id="d"> </div>
+<div class="disc5" id="d"> </div>
+</div>
 
 <div class="bar" > </div>
 
